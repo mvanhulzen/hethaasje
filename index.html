@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camping 'het haasje'</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222;}
+    header {position: sticky; top: 0; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; z-index: 10;}
+    header img {height: 50px;}
+    header nav a {margin-left: 1.5rem; text-decoration: none; color: #222; font-weight: 500;}
+    header nav a.button {background: #007FFF; color: #fff; padding: 0.5rem 1rem; border-radius: 5px;}
+    .hero {max-width: 1100px; margin: 4rem auto; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: 0 1rem;}
+    .hero img {width: 100%; max-width: 500px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+    .hero h1 {font-size: 2.5rem; color: #111;}
+    .hero span {color: #007FFF;}
+    .hero p {font-size: 1.1rem; line-height: 1.6; color: #444;}
+    .hero .buttons a {display: inline-block; margin-right: 1rem; margin-top: 1.5rem; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold;}
+    .btn-primary {background: #007FFF; color: white;}
+    .btn-outline {border: 1px solid #007FFF; color: #007FFF;}
+    section {max-width: 1100px; margin: 3rem auto; background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);}
+    section h2 {font-size: 1.8rem; margin-bottom: 1rem; color: #111;}
+    .cards {display: flex; flex-wrap: wrap; gap: 1.5rem;}
+    .card {flex: 1 1 300px; border: 1px solid #eee; border-radius: 10px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); background: #fff;}
+    .card h3 {margin-top: 0; color: #007FFF;}
+    .gallery {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;}
+    .gallery img {width: 100%; height: 180px; object-fit: cover; border-radius: 8px;}
+    footer {background: #fff; color: #555; text-align: center; padding: 2rem; font-size: 0.9rem; margin-top: 3rem; border-top: 1px solid #eee;}
+    form input, form textarea {width: 100%; padding: 0.75rem; margin-bottom: 0.75rem; border: 1px solid #ccc; border-radius: 5px;}
+    form button {background: #007FFF; color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 5px; cursor: pointer; font-weight: bold;}
+    @media (max-width: 768px){header nav{display:none;}.hero{flex-direction:column;text-align:center;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="het haasje logo"><span style="margin-left:10px;font-weight:bold;">het haasje</span></div>
+    <nav>
+      <a href="#about">Over</a>
+      <a href="#accommodations">Accommodaties</a>
+      <a href="#facilities">Faciliteiten</a>
+      <a href="#gallery">Galerij</a>
+      <a href="#contact" class="button">Boeken</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Camping <span>het haasje</span></h1>
+      <p>Rustige, moderne camping met een vleugje IT-luxe — perfect voor digitale nomaden, families en natuurliefhebbers. Snel internet, slimme faciliteiten en elegante service.</p>
+      <div class="buttons">
+        <a href="#accommodations" class="btn-primary">Bekijk accommodaties</a>
+        <a href="#contact" class="btn-outline">Contact & Route</a>
+      </div>
+    </div>
+    <!-- <img src="camp-hero.jpg" alt="Camping terrein" /> -->
+     <img src="camping_terrein.jpg" alt="Camping terrein" />
+  </section>
+
+  <section id="about">
+    <h2>Over onze camping</h2>
+    <p>Het haasje combineert professionele, strakke service met de rust van het buitenleven. Oorspronkelijk een initiatief van een IT-bedrijf, met veel aandacht voor kwaliteit, beveiligd netwerk en moderne voorzieningen.</p>
+  </section>
+
+  <section id="accommodations">
+    <h2>Accommodaties</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Kampeerplek Comfort</h3>
+        <p>Ruime plek met stroom, vlakbij modern sanitair.</p>
+        <strong>€18 / nacht</strong>
+      </div>
+      <div class="card">
+        <h3>Luxe Caravan</h3>
+        <p>Volledig uitgerust, privéterras en snelle Wi‑Fi.</p>
+        <strong>€75 / nacht</strong>
+      </div>
+      <div class="card">
+        <h3>Tiny Cabin</h3>
+        <p>Compact, stijlvol en met een kleine werkhoek — ideaal voor remote werken.</p>
+        <strong>€95 / nacht</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities">
+    <h2>Faciliteiten</h2>
+    <ul>
+      <li>Hoogwaardige Wi‑Fi (glasvezel backbone)</li>
+      <li>Sanitair met vloerverwarming</li>
+      <li>Keuken & gedeelde lounge</li>
+      <li>Fietsenverhuur & laadpalen voor e-bikes</li>
+      <li>Vergaderruimte met scherm en whiteboard</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Galerij</h2>
+    <div class="gallery">
+      <img src="camping01.png" alt="Camping foto 1">
+      <img src="camping02.jpg" alt="Camping foto 2">
+      <img src="camping03.jpg" alt="Camping foto 3">
+      <img src="camping04.jpg" alt="Camping foto 4">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Reserveren</h2>
+    <p>Stuur een bericht of bel ons voor beschikbaarheid en speciale tarieven.</p>
+    <p>📍 Kampweg 1, 0000 AA — Nederland<br>📞 06-12345678<br>✉️ camping@hethaasje.nl</p>
+    <form>
+      <input type="text" placeholder="Naam" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Bericht / datumwens"></textarea>
+      <button type="submit">Verstuur bericht</button>
+    </form>
+  </section>
+
+  <footer>
+    <img src="logo.png" alt="het haasje" style="height:40px;vertical-align:middle;">
+    <p>© 2025 het haasje — Alle rechten voorbehouden</p>
+  </footer>
+</body>
+</html>
